@@ -6,7 +6,9 @@ import org.junit.jupiter.api.Test;
 
 class ExerciseTest {
     @Test
-    public void shouldSayHelloWorld() {
-        Assertions.assertEquals("Hello, world!", Exercise.sayHelloWorld());
+    public void shouldReturnCorrectMessage() {
+        Assertions.assertEquals("You got an A", Exercise.returnsMessage("A"));
+        Assertions.assertEquals("You got a B", Exercise.returnsMessage("B"));
+        Assertions.assertEquals("You didn't get an A or B", Exercise.returnsMessage("X"));
     }
 }
