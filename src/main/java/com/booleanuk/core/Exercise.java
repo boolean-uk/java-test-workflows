@@ -10,6 +10,9 @@ public class Exercise {
             case "B":
                 message = "You got a B";
                 break;
+            case "C":
+                message = "You got a C";
+                break;
             default:
                 message = "You didn't get an A or B";
                 break;
